@@ -1,4 +1,3 @@
-My Awesome Book
-=======
+# 티스토리 스킨 치환자
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+티스토리 스킨에서 사용하는 치환자에 대해서 설명합니다.
