@@ -14,8 +14,8 @@
 	</div>
 </s_tag>
 ```
-- 그룹치환자: tag, tag_rep
-- 값치환자: tag_link, tag_class, tag_name
+- 그룹치환자: `<s_tag>`, `<s_tag_rep>`
+- 값치환자: `[##_tag_link_##]`, `[##_tag_class_##]`, `[##_tag_name_##]`
 
 
 ## 그룹치환자
