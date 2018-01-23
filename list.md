@@ -16,8 +16,8 @@
 	- `[##_list_rep_author_##]`: 작성자 이름
 
 ## 예
-```
-// 스킨
+```html
+<!-- 스킨 -->
 <s_list>
 	<div class="searchList">
 		<h3>'[##_list_conform_##]'에 해당되는 글 [##_list_count_##]건</h3>
@@ -34,8 +34,8 @@
 </s_list>
 ```
 
-```
-// 변환 예
+```html
+<!-- 변환 예 -->
 <div class="searchList">
 	<h3>'업데이트 소식'에 해당되는 글 2건</h3>
 	<ol>
