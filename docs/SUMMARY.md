@@ -1,16 +1,29 @@
 # 개요
 
 ## 공통 치환자
-- [치환자 구조](basic.md)
-- [공통](global.md)
+- [치환자 구조](common/basic.md)
+- [공통](common/global.md)
 
 ## 컨텐츠
-- [태그 클라우드](tag.md)
-- [방명록](guestbook.md)
-- [글](post.md)
-  - [댓글](comment.md)
-  - [공지사항](notice.md)
-  - [보호글](protected.md)
-  - [페이지](page.md)
-- [리스트](list.md)
-  - [리스트 페이징](paging.md)
+- [태그 클라우드](contents/tag.md)
+- [방명록](contents/guestbook.md)
+- [글](contents/post.md)
+  - [댓글](contents/comment.md)
+  - [공지사항](contents/notice.md)
+  - [보호글](contents/protected.md)
+  - [페이지](contents/page.md)
+- [리스트](list/list.md)
+  - [리스트 페이징](list/paging.md)
+
+## 사이드바
+- [사이드바 구조](sidebar/basic.md)
+- [최근 공지사항](sidebar/recent_notice.md)
+- [최근 글](sidebar/recent_post.md)
+- [최근 댓글](sidebar/recent_comment.md)
+- [카테고리](sidebar/category.md)
+- [랜덤태그](sidebar/random_tag.md)
+- [글 보관함](sidebar/archive.md)
+- [달력](sidebar/calendar.md)
+- [링크](sidebar/link.md)
+- [방문자수](sidebar/count.md)
+- [검색](sidebar/search.md)
