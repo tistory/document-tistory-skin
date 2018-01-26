@@ -1,6 +1,6 @@
-# 최근 글
+# 인기글
 
-- `<s_rctps_rep>`: 최근에 올라온 글을 반복 출력합니다
+- `<s_rctps_popular_rep>`: 최근에 올라온 글을 반복 출력합니다
   - `[##_rctps_rep_link_##]`: 글 주소
   - `[##_rctps_rep_title_##]`: 글 제목
   - `[##_rctps_rep_rp_cnt_##]`: 글 댓글 갯수
@@ -10,11 +10,11 @@
 
 ```html
 <s_sidebar_element>
-  <!-- 최근에 올라온 글 -->
-  <div class="recentPost">
-    <h3>최근에 올라온 글 </h3>
+  <!-- 이 블로그 인기글 -->
+  <div class="popularPost">
+    <h3>이 블로그 인기글 </h3>
     <ul>
-      <s_rctps_rep>
+      <s_rctps_popular_rep>
         <li>
           <a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
           <span class="cnt">[##_rctps_rep_rp_cnt_##]</span>
@@ -22,7 +22,7 @@
             <img src="[##_rctps_rep_thumbnail_##]"/>
           </s_rctps_rep_thumbnail>
         </li>
-      </s_rctps_rep>
+      </s_rctps_popular_rep>
     </ul>
   </div>
 </s_sidebar_element>

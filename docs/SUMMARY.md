@@ -3,6 +3,8 @@
 ## 공통 치환자
 - [치환자 구조](common/basic.md)
 - [공통](common/global.md)
+- [홈 커버](common/cover.md)
+- [스킨 옵션](common/variable.md)
 
 ## 컨텐츠
 - [태그 클라우드](contents/tag.md)
@@ -19,6 +21,7 @@
 - [사이드바 구조](sidebar/basic.md)
 - [최근 공지사항](sidebar/recent_notice.md)
 - [최근 글](sidebar/recent_post.md)
+- [인기글](sidebar/popular_post.md)
 - [최근 댓글](sidebar/recent_comment.md)
 - [카테고리](sidebar/category.md)
 - [랜덤태그](sidebar/random_tag.md)
