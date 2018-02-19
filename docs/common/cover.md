@@ -86,13 +86,13 @@
 <cover>
   <item>
     <name>featured</name>
-    <label>Featured Posts</label>
-    <description>화면 가득 표시되는 형태</description>
+    <label><![CDATA[Featured]]></label>
+    <description><![CDATA[강조할 글을 표시합니다.]]></description>
   </item>
   <item>
     <name>list</name>
-    <label>Posts List</label>
-    <description>이미지와 제목, 용약이 나열되는 형태</description>
+    <label><![CDATA[리스트]]></label>
+    <description><![CDATA[글 리스트를 표시합니다.]]></description>
   </item>
 </cover>
 ```
