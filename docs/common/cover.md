@@ -19,6 +19,7 @@
           - `[##_cover_item_date_##]`: 발행시간
           - `[##_cover_item_comment_count_##]`: 댓글 수
 
+### 커버 치환자 사용 예
 ```html
 <s_cover_group>
   <s_cover_rep>
@@ -72,10 +73,26 @@
 
 ```xml
 <cover>
-    <item>
-        <name>커버 아이템 이름</name>
-        <label>사용자에게 표시할 이름</label>
-        <description>설명</description>
-    </item>
+  <item>
+    <name>커버 아이템 이름</name>
+    <label>사용자에게 표시할 이름</label>
+    <description>설명</description>
+  </item>
+</cover>
+```
+
+### 커버 정의 예
+```xml
+<cover>
+  <item>
+    <name>featured</name>
+    <label>Featured Posts</label>
+    <description>화면 가득 표시되는 형태</description>
+  </item>
+  <item>
+    <name>list</name>
+    <label>Posts List</label>
+    <description>이미지와 제목, 용약이 나열되는 형태</description>
+  </item>
 </cover>
 ```
