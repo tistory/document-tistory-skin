@@ -1,3 +1,6 @@
 {
-  "root": "docs"
+  "root": "docs",
+  "pdf": {
+    "fontSize": 10
+  }
 }
