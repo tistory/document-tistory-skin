@@ -16,4 +16,4 @@
     [##_category_list_##]
   </div>
 </s_sidebar_element>
-``
+```
