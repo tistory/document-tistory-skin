@@ -7,6 +7,8 @@
   - `[##_rctps_rep_author_##]`: 작성자 이름 (*팀블로그용 치환자)
   - `<s_rctps_rep_thumbnail>`: 대표 이미지가 있는 경우 치환
     - `[##_rctps_rep_thumbnail_##]`: 대표 이미지
+  - `[##_rctps_rep_category_##]`: 카테고리 이름
+  - `[##_rctps_rep_category_link_##]`: 카테고리 리스트 url
 
 ```html
 <s_sidebar_element>
@@ -21,6 +23,7 @@
           <s_rctps_rep_thumbnail>
             <img src="[##_rctps_rep_thumbnail_##]"/>
           </s_rctps_rep_thumbnail>
+          <a href="[##_rctps_rep_category_link_##]">[##_rctps_rep_category_##]</a>
         </li>
       </s_rctps_popular_rep>
     </ul>
