@@ -14,6 +14,8 @@
 	- `[##_list_rep_title_##]`: 글의 제목
 	- `[##_list_rep_rp_cnt_##]`: 댓글 수
 	- `[##_list_rep_author_##]`: 작성자 이름
+	- `<s_list_rep_thumbnail>`: 대표 이미지가 있는 경우 치환
+    - `[##_list_rep_thumbnail_##]`: 대표 이미지
 
 ## 예
 ```html
@@ -27,6 +29,9 @@
 					<span class="date">[##_list_rep_regdate_##]</span>
 					<a href="[##_list_rep_link_##]">[##_list_rep_title_##]</a>
 					<span class="cnt">[##_list_rep_rp_cnt_##]</span>
+					<s_list_rep_thumbnail>
+						<img src="[##_list_rep_thumbnail_##]">
+					</s_list_rep_thumbnail>
 				</li>
 			</s_list_rep>
 		</ol>
@@ -43,11 +48,13 @@
 			<span class="date">2016.01.25</span>
 			<a href="/2289">1월 초대장이 배포되었습니다.</a>
 			<span class="cnt">8</span>
+			<img src="https://s1.daumcdn.net/cfile/tistory/1234">
 		</li>
 		<li>
 			<span class="date">2015.12.22</span>
 			<a href="/2283">12월 초대장이 배포되었습니다.</a>
 			<span class="cnt">19</span>
+			<img src="https://s1.daumcdn.net/cfile/tistory/5678">
 		</li>
 	</ol>
 </div>
