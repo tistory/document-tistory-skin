@@ -1,6 +1,6 @@
-# 커버
+# 홈 커버
 
-커버는 홈화면을 꾸미기 위해 제공되는 치환자입니다.
+홈 커버는 홈화면을 꾸미기 위해 제공되는 치환자입니다.
 
 - `<s_cover_group>`: 커버 그룹 치환자
   - `<s_cover_rep>`: 개별 커버 표시
@@ -19,7 +19,7 @@
           - `[##_cover_item_date_##]`: 발행시간
           - `[##_cover_item_comment_count_##]`: 댓글 수
 
-### 커버 치환자 사용 예
+### 치환자 사용 예
 ```html
 <s_cover_group>
   <s_cover_rep>
@@ -69,7 +69,9 @@
 </s_cover_group>
 ```
 
-## 커버 정의 (index.xml)
+## 정의 (index.xml)
+
+커버를 사용하기 위해서는 [스킨 정보 파일](index.xml.md)에 커버 아이템을 정의해야 합니다.
 
 ```xml
 <cover>
@@ -81,7 +83,7 @@
 </cover>
 ```
 
-### 커버 정의 예
+### 정의 예
 ```xml
 <cover>
   <item>
@@ -95,4 +97,88 @@
     <description><![CDATA[글 리스트를 표시합니다.]]></description>
   </item>
 </cover>
+```
+
+## 기본값
+
+스킨 적용 즉시 제작자가 추천하는 홈커버가 적용되도록 하기 위해서 기본값을 사용할 수 있습니다. 스킨 정보 파일의 기본값에 JSON 값을 string으로 설정합니다.
+
+```xml
+<default>
+  <cover>
+    <![CDATA[ 홈 커버 기본값 ]]>
+  </cover>
+</default>
+```
+
+### 기본값 JSON 구조
+```json
+[
+  {
+    "name": "정의된 커버 아이템 name",
+    "title": "커버 타이틀",
+    "dataType": "내용의 데이터 타입",
+    "data": "타입에 해당하는 데이터"
+  },
+  ...
+]
+```
+
+- name: 정의된 커버 아이템으로 없는 커버를 사용할 경우 무시됩니다.
+- title: 커버타이틀로 사용할 string 입니다.
+- dataType: 내용유형으로 스킨 에디터에서 제공하는 유형 중 '최신 글', '직접 입력' 만 사용할 수 있습니다.
+  - RECENT: 최신 글
+  - CUSTOM: 직접 입력
+- data: 커버 내용으로 유형별로 형태가 다릅니다.
+  - RECENT: 카테고리와 개수를 설정할 수 있습니다.
+    ```json
+    {
+      "category": "ALL",
+      "size": 5
+    }
+    ```
+    - category: 사용자의 카테고리를 알 수 없으므로 전체(ALL), 공지사항(NOTICE)만 사용할 수 있습니다.
+    - size: 표시될 개수를 설정합니다. 1-100 까지 설정할 수 있습니다.
+  - CUSTOM: 표시될 내용을 모두 설정
+    ```json
+    {
+      "title": "컨텐츠 타이틀",
+      "summary": "컨텐츠 타이틀",
+      "url": "컨텐츠 요약/내용",
+      "thumbnail": "컨텐츠 이미지"
+    }
+    ```
+
+### 기본값 예
+```json
+[
+  {
+    "name": "featured",
+    "title": "",
+    "dataType": "CUSTOM",
+    "data": [
+      {
+        "title": "첫번째 항목",
+        "summary": "첫번째 항목의 summary",
+        "url": "https://www.tistory.com",
+        "thumbnail": "https://www.tistory.com/sample.png"
+      },
+      {
+        "title": "두번째 항목",
+        "summary": "두번째 항목의 summary",
+        "url": "https://www.tistory.com",
+        "thumbnail": "https://www.tistory.com/sample.png"
+      }
+    ]
+  },
+  {
+    "name": "list",
+    "title": "",
+    "dataType": "LIST",
+    "data": {
+      "category": "ALL",
+      "size": 5
+    }
+  }
+]
 ```

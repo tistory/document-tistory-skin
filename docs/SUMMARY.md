@@ -1,7 +1,12 @@
 # 개요
 
-## 공통 치환자
+## 기본
+- [소개](README.md)
+- [파일 구조](common/files.md)
+- [스킨 정보 파일 (index.xml)](common/index.xml.md)
 - [치환자 구조](common/basic.md)
+
+## 공통 치환자
 - [공통](common/global.md)
 - [홈 커버](common/cover.md)
 - [스킨 옵션](common/variable.md)
