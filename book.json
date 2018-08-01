@@ -1,5 +1,5 @@
 {
-  "root": "docs",
+  "root": "src",
   "pdf": {
     "fontSize": 10
   }
