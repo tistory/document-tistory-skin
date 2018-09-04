@@ -1,0 +1,33 @@
+{
+  "name": "document-tistory-skin",
+  "version": "1.0.0",
+  "description": "Tistory Skin Documents",
+  "main": "README.md",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "gitbook serve .",
+    "build": "gitbook build . docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tistory/document-tistory-skin.git"
+  },
+  "keywords": [
+    "Tistory",
+    "Skin",
+    "Documents"
+  ],
+  "author": "Tistory",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tistory/document-tistory-skin/issues"
+  },
+  "homepage": "https://github.com/tistory/document-tistory-skin#readme",
+  "dependencies": {
+    "gitbook": "^3.2.3",
+    "gitbook-cli": "^2.3.2"
+  }
+}
