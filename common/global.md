@@ -38,13 +38,29 @@
 ### 기타
 - `[##_page_title_##]`: 페이지 제목
 - `[##_blog_menu_##]`: 블로그 메뉴 리스트
+- `[##_body_id_##]`: 페이지 타입에 따른 id
 
+| 페이지 타입 | body_id |
+| --- | --- |
+| 홈화면 | tt-body-index |
+| 글화면 | tt-body-page |
+| 카테고리 글 리스트 | tt-body-category |
+| 보관함 글 리스트 | tt-body-archive |
+| 태그 리스트 | tt-body-tag |
+| 검색결과 리스트 | tt-body-search |
+| 방명록 | tt-body-guestbook |
+| 미디어로그 | tt-body-media |
+| 지역로그 | tt-body-location |
+
+
+## 사용 예
 ```html
 <html>
 <head>
   <title>[##_page_title_##]</title>
 </head>
-<body>
+<body id='[##_body_id_##]'>
+<s_t3>
   <header>
     <h1><a href="[##_blog_link_##]">[##_title_##]</a></h1>
 
@@ -72,6 +88,7 @@
       <div class="blogDesc">[##_desc_##] <span class="userID">[##_blogger_##]</span></div>
     </div>
   </section>
+</s_t3>
 </body>
 </html>
 ```
