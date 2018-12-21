@@ -132,7 +132,7 @@
   - `[##_article_related_rep_link_##]`: 글 주소
   - `[##_article_related_rep_title_##]`: 글 제목
   - `[##_article_related_rep_date_##]`: 글 작성시간
-  - `<s_article_related_rep_thumbnail>`: 대표 이미지 썸네일이 표시되는 영역입니다 (대표 이미지가 없는 경우 표시되지 않음)
+  - `<s_article_related_rep_thumbnail>`: 대표 이미지 썸네일이 표시되는 그룹치환자 (대표 이미지가 있는 경우 표시)
     - `[##_article_related_rep_thumbnail_link_##]`: 대표 이미지 썸네일 주소
 
 ```html
@@ -159,3 +159,23 @@
   </div>
 </s_article_related>
 ```
+
+## 이전 글 / 다음 글
+
+글의 이전 글과 다음 글을 보여줍니다. 페이징 치환자의 이전/다음 페이지 url과 동일한 글입니다.
+
+- `<s_article_prev>`: 이전 글 그룹치환자. 이전 글이 있는 경우 사용됩니다.
+  - `[##_article_prev_type_##]`: 글의 type (대표이미지 없음: text_type, 대표이미지 있음: thumb_type)
+  - `[##_article_prev_link_##]`: 글 주소
+  - `[##_article_prev_title_##]`: 글 제목
+  - `[##_article_prev_date_##]`: 글 작성시간
+  - `<s_article_prev_thumbnail>`: 대표 이미지 썸네일이 표시되는 그룹치환자 (대표 이미지가 있는 경우 표시)
+    - `[##_article_prev_thumbnail_link_##]`: 대표 이미지 썸네일 주소
+- `<s_article_next>`: 다음 글 그룹치환자. 다음 글이 있는 경우 사용됩니다.
+  - `[##_article_next_type_##]`: 글의 type (대표이미지 없음: text_type, 대표이미지 있음: thumb_type)
+  - `[##_article_next_link_##]`: 글 주소
+  - `[##_article_next_title_##]`: 글 제목
+  - `[##_article_next_date_##]`: 글 작성시간
+  - `<s_article_next_thumbnail>`: 대표 이미지 썸네일이 표시되는 그룹치환자 (대표 이미지가 있는 경우 표시)
+    - `[##_article_next_thumbnail_link_##]`: 대표 이미지 썸네일 주소
+
