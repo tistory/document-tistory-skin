@@ -8,12 +8,18 @@
       - `[##_cover_title_##]`: 개별 커버 타이틀
       - `[##_cover_url_##]`: 개별 커버 url
       - `<s_cover_item>`: 개별 커버 컨텐츠
-        - `[##_cover_item_title_##]`: 컨텐츠 타이틀
-        - `[##_cover_item_summary_##]`: 컨텐츠 요약/내용
-        - `[##_cover_item_url_##]`: 컨텐츠 url
-        - `<s_cover_item_thumbnail>`: 컨텐츠 이미지가 있는 경우에만 치환
-          - `[##_cover_item_thumbnail_##]`: 컨텐츠 이미지
+        - `<s_cover_item_not_article_info>`: 컨텐츠가 글이 아닌 경우에만 치환 (내부 치환자는 s_cover_item에 직접 사용 가능)
+          - `[##_cover_item_title_##]`: 컨텐츠 타이틀
+          - `[##_cover_item_summary_##]`: 컨텐츠 요약/내용
+          - `[##_cover_item_url_##]`: 컨텐츠 url
+          - `<s_cover_item_thumbnail>`: 컨텐츠 이미지가 있는 경우에만 치환
+            - `[##_cover_item_thumbnail_##]`: 컨텐츠 이미지
         - `<s_cover_item_article_info>`: 컨텐츠가 글인 경우에만 치환
+          - `[##_cover_item_title_##]`: 컨텐츠 타이틀
+          - `[##_cover_item_summary_##]`: 컨텐츠 요약/내용
+          - `[##_cover_item_url_##]`: 컨텐츠 url
+          - `<s_cover_item_thumbnail>`: 컨텐츠 이미지가 있는 경우에만 치환
+            - `[##_cover_item_thumbnail_##]`: 컨텐츠 이미지
           - `[##_cover_item_category_##]`: 카테고리 명
           - `[##_cover_item_category_url_##]`: 카테고리 url
           - `[##_cover_item_date_##]`: 발행시간
@@ -42,22 +48,34 @@
     <s_cover name='list'>
       <div id="mArticle" class="article_skin">
         <s_cover_item>
-          <div class="list_content">
-            <s_cover_item_thumbnail>
-              <a href="[##_cover_item_url_##]" class="thumbnail_post"><img src="//i1.daumcdn.net/thumb/C148x148/?fname=[##_cover_item_thumbnail_##]"></a>
-            </s_cover_item_thumbnail>
-            <a href="[##_cover_item_url_##]" class="link_post">
-              <strong class="tit_post">[##_cover_item_title_##]</strong>
-              <p class="txt_post">[##_cover_item_summary_##]</p>
-            </a>
-            <s_cover_item_article_info>
+          <s_cover_item_article_info>
+            <div class="list_content">
+              <s_cover_item_thumbnail>
+                <a href="[##_cover_item_url_##]" class="thumbnail_post"><img src="//i1.daumcdn.net/thumb/C148x148/?fname=[##_cover_item_thumbnail_##]"></a>
+              </s_cover_item_thumbnail>
+              <a href="[##_cover_item_url_##]" class="link_post">
+                <strong class="tit_post">[##_cover_item_title_##]</strong>
+                <p class="txt_post">[##_cover_item_summary_##]</p>
+              </a>
               <div class="detail_info">
                 <a href="[##_cover_item_category_url_##]" class="link_cate">[##_cover_item_category_##]</a>
                 <span class="txt_bar"></span>
                 [##_cover_item_date_##]
               </div>
-            </s_cover_item_article_info>
-          </div>
+            </div>
+          </s_cover_item_article_info>
+
+          <s_cover_item_not_article_info>
+            <div class="list_content">
+              <s_cover_item_thumbnail>
+                <a href="[##_cover_item_url_##]" class="thumbnail_post"><img src="//i1.daumcdn.net/thumb/C148x148/?fname=[##_cover_item_thumbnail_##]"></a>
+              </s_cover_item_thumbnail>
+              <a href="[##_cover_item_url_##]" class="link_post">
+                <strong class="tit_post">[##_cover_item_title_##]</strong>
+                <p class="txt_post">[##_cover_item_summary_##]</p>
+              </a>
+            </div>
+          </s_cover_item_not_article_info>
         </s_cover_item>
         
         <s_cover_url>
