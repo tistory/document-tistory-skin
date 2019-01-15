@@ -506,6 +506,7 @@
 <li><code>[##_cover_title_##]</code>: &#xAC1C;&#xBCC4; &#xCEE4;&#xBC84; &#xD0C0;&#xC774;&#xD2C0;</li>
 <li><code>[##_cover_url_##]</code>: &#xAC1C;&#xBCC4; &#xCEE4;&#xBC84; url</li>
 <li><code>&lt;s_cover_item&gt;</code>: &#xAC1C;&#xBCC4; &#xCEE4;&#xBC84; &#xCEE8;&#xD150;&#xCE20;<ul>
+<li><code>&lt;s_cover_item_not_article_info&gt;</code>: &#xCEE8;&#xD150;&#xCE20;&#xAC00; &#xAE00;&#xC774; &#xC544;&#xB2CC; &#xACBD;&#xC6B0;&#xC5D0;&#xB9CC; &#xCE58;&#xD658; (&#xB0B4;&#xBD80; &#xCE58;&#xD658;&#xC790;&#xB294; s_cover_item&#xC5D0; &#xC9C1;&#xC811; &#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;)<ul>
 <li><code>[##_cover_item_title_##]</code>: &#xCEE8;&#xD150;&#xCE20; &#xD0C0;&#xC774;&#xD2C0;</li>
 <li><code>[##_cover_item_summary_##]</code>: &#xCEE8;&#xD150;&#xCE20; &#xC694;&#xC57D;/&#xB0B4;&#xC6A9;</li>
 <li><code>[##_cover_item_url_##]</code>: &#xCEE8;&#xD150;&#xCE20; url</li>
@@ -513,7 +514,16 @@
 <li><code>[##_cover_item_thumbnail_##]</code>: &#xCEE8;&#xD150;&#xCE20; &#xC774;&#xBBF8;&#xC9C0;</li>
 </ul>
 </li>
+</ul>
+</li>
 <li><code>&lt;s_cover_item_article_info&gt;</code>: &#xCEE8;&#xD150;&#xCE20;&#xAC00; &#xAE00;&#xC778; &#xACBD;&#xC6B0;&#xC5D0;&#xB9CC; &#xCE58;&#xD658;<ul>
+<li><code>[##_cover_item_title_##]</code>: &#xCEE8;&#xD150;&#xCE20; &#xD0C0;&#xC774;&#xD2C0;</li>
+<li><code>[##_cover_item_summary_##]</code>: &#xCEE8;&#xD150;&#xCE20; &#xC694;&#xC57D;/&#xB0B4;&#xC6A9;</li>
+<li><code>[##_cover_item_url_##]</code>: &#xCEE8;&#xD150;&#xCE20; url</li>
+<li><code>&lt;s_cover_item_thumbnail&gt;</code>: &#xCEE8;&#xD150;&#xCE20; &#xC774;&#xBBF8;&#xC9C0;&#xAC00; &#xC788;&#xB294; &#xACBD;&#xC6B0;&#xC5D0;&#xB9CC; &#xCE58;&#xD658;<ul>
+<li><code>[##_cover_item_thumbnail_##]</code>: &#xCEE8;&#xD150;&#xCE20; &#xC774;&#xBBF8;&#xC9C0;</li>
+</ul>
+</li>
 <li><code>[##_cover_item_category_##]</code>: &#xCE74;&#xD14C;&#xACE0;&#xB9AC; &#xBA85;</li>
 <li><code>[##_cover_item_category_url_##]</code>: &#xCE74;&#xD14C;&#xACE0;&#xB9AC; url</li>
 <li><code>[##_cover_item_date_##]</code>: &#xBC1C;&#xD589;&#xC2DC;&#xAC04;</li>
@@ -551,22 +561,34 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">s_cover</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&apos;list&apos;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;mArticle&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;article_skin&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">s_cover_item</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list_content&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">s_cover_item_thumbnail</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;[##_cover_item_url_##]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;thumbnail_post&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;//i1.daumcdn.net/thumb/C148x148/?fname=[##_cover_item_thumbnail_##]&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">s_cover_item_thumbnail</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;[##_cover_item_url_##]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link_post&quot;</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">strong</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tit_post&quot;</span>&gt;</span>[##_cover_item_title_##]<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;txt_post&quot;</span>&gt;</span>[##_cover_item_summary_##]<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">s_cover_item_article_info</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">s_cover_item_article_info</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list_content&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">s_cover_item_thumbnail</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;[##_cover_item_url_##]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;thumbnail_post&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;//i1.daumcdn.net/thumb/C148x148/?fname=[##_cover_item_thumbnail_##]&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">s_cover_item_thumbnail</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;[##_cover_item_url_##]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link_post&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">strong</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tit_post&quot;</span>&gt;</span>[##_cover_item_title_##]<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;txt_post&quot;</span>&gt;</span>[##_cover_item_summary_##]<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;detail_info&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;[##_cover_item_category_url_##]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link_cate&quot;</span>&gt;</span>[##_cover_item_category_##]<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;txt_bar&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 [##_cover_item_date_##]
               <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">s_cover_item_article_info</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">s_cover_item_article_info</span>&gt;</span>
+
+          <span class="hljs-tag">&lt;<span class="hljs-name">s_cover_item_not_article_info</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list_content&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">s_cover_item_thumbnail</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;[##_cover_item_url_##]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;thumbnail_post&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;//i1.daumcdn.net/thumb/C148x148/?fname=[##_cover_item_thumbnail_##]&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">s_cover_item_thumbnail</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;[##_cover_item_url_##]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link_post&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">strong</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tit_post&quot;</span>&gt;</span>[##_cover_item_title_##]<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;txt_post&quot;</span>&gt;</span>[##_cover_item_summary_##]<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">s_cover_item_not_article_info</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">s_cover_item</span>&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-name">s_cover_url</span>&gt;</span>
@@ -725,7 +747,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"홈 커버","level":"2.2","depth":1,"next":{"title":"스킨 옵션","level":"2.3","depth":1,"path":"common/variable.md","ref":"common/variable.md","articles":[]},"previous":{"title":"공통","level":"2.1","depth":1,"path":"common/global.md","ref":"common/global.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-tistory"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-tistory":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"common/cover.md","mtime":"2018-10-15T08:18:29.549Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-15T01:27:34.689Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"홈 커버","level":"2.2","depth":1,"next":{"title":"스킨 옵션","level":"2.3","depth":1,"path":"common/variable.md","ref":"common/variable.md","articles":[]},"previous":{"title":"공통","level":"2.1","depth":1,"path":"common/global.md","ref":"common/global.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-tistory"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-tistory":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"common/cover.md","mtime":"2019-01-15T04:02:01.185Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-15T04:24:49.769Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
