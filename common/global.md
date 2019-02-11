@@ -49,7 +49,6 @@
 | 태그 리스트 | tt-body-tag |
 | 검색결과 리스트 | tt-body-search |
 | 방명록 | tt-body-guestbook |
-| 미디어로그 | tt-body-media |
 | 지역로그 | tt-body-location |
 
 
