@@ -87,7 +87,7 @@
   - `[##_article_rep_date_##]`: 글쓴 날짜/시간 (yyyy.mm.dd HH:MM)
   - `[##_article_rep_simple_date_##]`: 글쓴 날짜 (yyyy.mm.dd)
   - `[##_article_rep_author_##]`: 작성자 이름
-  - `[##_article_rep_summary_##]`: 글 내용 일부
+  - `[##_article_rep_summary_##]`: 글 내용 요약
   - `<s_article_rep_thumbnail>`: 대표 이미지 썸네일이 표시되는 영역 (대표 이미지가 없는 경우 표시되지 않음)
     - `[##_article_rep_thumbnail_url_##]`: 대표 이미지 썸네일 주소
     - `[##_article_rep_thumbnail_raw_url_##]`: 대표 이미지 원본 주소

@@ -14,6 +14,7 @@
 	- `[##_list_rep_title_##]`: 글의 제목
 	- `[##_list_rep_rp_cnt_##]`: 댓글 수
 	- `[##_list_rep_author_##]`: 작성자 이름
+  - `[##_list_rep_summary_##]`: 글 내용 요약
 	- `<s_list_rep_thumbnail>`: 대표 이미지가 있는 경우 치환
     - `[##_list_rep_thumbnail_##]`: 대표 이미지
 
