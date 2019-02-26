@@ -505,9 +505,20 @@
 <li><code>[##_article_rep_title_##]</code>: &#xBE14;&#xB85C;&#xADF8; &#xAE00;&#xC758; &#xC81C;&#xBAA9;</li>
 <li><code>[##_article_rep_category_link_##]</code>: &#xCE74;&#xD14C;&#xACE0;&#xB9AC; &#xB9C1;&#xD06C;</li>
 <li><code>[##_article_rep_category_##]</code>: &#xCE74;&#xD14C;&#xACE0;&#xB9AC; &#xBA85;</li>
-<li><code>[##_article_rep_date_##]</code>: &#xAE00;&#xC4F4; &#xB0A0;&#xC9DC;</li>
+<li><code>[##_article_rep_date_##]</code>: &#xAE00;&#xC4F4; &#xB0A0;&#xC9DC;/&#xC2DC;&#xAC04; (yyyy.mm.dd HH:MM)</li>
+<li><code>[##_article_rep_simple_date_##]</code>: &#xAE00;&#xC4F4; &#xB0A0;&#xC9DC; (yyyy.mm.dd)</li>
 <li><code>[##_article_rep_author_##]</code>: &#xC791;&#xC131;&#xC790; &#xC774;&#xB984; (*&#xD300;&#xBE14;&#xB85C;&#xADF8;&#xC6A9; &#xCE58;&#xD658;&#xC790;)</li>
 <li><code>[##_article_rep_desc_##]</code>: &#xBE14;&#xB85C;&#xADF8; &#xBCF8;&#xBB38; &#xB0B4;&#xC6A9;</li>
+<li><code>&lt;s_article_rep_thumbnail&gt;</code>: &#xB300;&#xD45C; &#xC774;&#xBBF8;&#xC9C0; &#xC378;&#xB124;&#xC77C;&#xC774; &#xD45C;&#xC2DC;&#xB418;&#xB294; &#xC601;&#xC5ED; (&#xB300;&#xD45C; &#xC774;&#xBBF8;&#xC9C0;&#xAC00; &#xC5C6;&#xB294; &#xACBD;&#xC6B0; &#xD45C;&#xC2DC;&#xB418;&#xC9C0; &#xC54A;&#xC74C;)<ul>
+<li><code>[##_article_rep_thumbnail_url_##]</code>: &#xB300;&#xD45C; &#xC774;&#xBBF8;&#xC9C0; &#xC378;&#xB124;&#xC77C; &#xC8FC;&#xC18C;</li>
+<li><code>[##_article_rep_thumbnail_raw_url_##]</code>: &#xB300;&#xD45C; &#xC774;&#xBBF8;&#xC9C0; &#xC6D0;&#xBCF8; &#xC8FC;&#xC18C;</li>
+</ul>
+</li>
+<li><code>[##_article_rep_rp_link_##]</code>: &#xB313;&#xAE00;&#xC744; &#xC5F4;&#xACE0; &#xB2EB;&#xB294; &#xC628;&#xD074;&#xB9AD; &#xC774;&#xBCA4;&#xD2B8;</li>
+<li><code>&lt;s_rp_count&gt;</code>: &#xB313;&#xAE00;&#xC758; &#xAC2F;&#xC218;&#xB97C; &#xCD9C;&#xB825;&#xD558;&#xB294; &#xC601;&#xC5ED;<ul>
+<li><code>[##_article_rep_rp_cnt_##]</code>: &#xB2F5;&#xAE00; &#xC218; </li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -561,22 +572,6 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">s_tag_label</span>&gt;</span>
 </code></pre>
-<h2 id="&#xB313;&#xAE00;-&#xC218;">&#xB313;&#xAE00; &#xC218;</h2>
-<ul>
-<li><code>&lt;s_rp_count&gt;</code>: &#xB313;&#xAE00;&#xC758; &#xAC2F;&#xC218;&#xB97C; &#xCD9C;&#xB825;&#xD558;&#xB294; &#xC601;&#xC5ED;<ul>
-<li><code>[##_article_rep_rp_link_##]</code>: &#xB313;&#xAE00;&#xC744; &#xC5F4;&#xACE0; &#xB2EB;&#xB294; &#xC628;&#xD074;&#xB9AD; &#xC774;&#xBCA4;&#xD2B8;</li>
-<li><code>[##_article_rep_rp_cnt_##]</code>: &#xB2F5;&#xAE00; &#xC218; </li>
-</ul>
-</li>
-</ul>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;actionTrail&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#rp&quot;</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;[##_article_rep_rp_link_##]&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">s_rp_count</span>&gt;</span>
-      &#xB313;&#xAE00; <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cnt&quot;</span>&gt;</span>[##_article_rep_rp_cnt_##]<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&#xAC1C;&#xAC00; &#xB2EC;&#xB838;&#xC2B5;&#xB2C8;&#xB2E4;.
-    <span class="hljs-tag">&lt;/<span class="hljs-name">s_rp_count</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
 <h2 id="&#xD37C;&#xBA38;&#xB9C1;&#xD06C;--&#xC778;&#xB371;&#xC2A4;">&#xD37C;&#xBA38;&#xB9C1;&#xD06C; / &#xC778;&#xB371;&#xC2A4;</h2>
 <p>&#xD37C;&#xBA38;&#xB9C1;&#xD06C; &#xD398;&#xC774;&#xC9C0;&#xC5D0;&#xC11C;&#xC640; &#xC778;&#xB371;&#xC2A4; &#xD398;&#xC774;&#xC9C0;&#xC5D0;&#xC11C; &#xD45C;&#xC2DC;&#xB420; &#xB0B4;&#xC6A9;&#xC744; &#xAD6C;&#xBD84;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.\
 (&#xD37C;&#xBA38;&#xB9C1;&#xD06C; &#xD398;&#xC774;&#xC9C0;/&#xC778;&#xB371;&#xC2A4; &#xD398;&#xC774;&#xC9C0; &#xC601;&#xC5ED; &#xBC16;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xCE58;&#xD658;&#xC790;&#xB294; &#xB458; &#xBAA8;&#xB450;&#xC5D0;&#xC11C; &#xD45C;&#xC2DC;&#xB429;&#xB2C8;&#xB2E4;) </p>
@@ -592,12 +587,17 @@
 <li><code>[##_article_rep_title_##]</code>: &#xBE14;&#xB85C;&#xADF8; &#xAE00;&#xC758; &#xC81C;&#xBAA9;</li>
 <li><code>[##_article_rep_category_link_##]</code>: &#xCE74;&#xD14C;&#xACE0;&#xB9AC; &#xC8FC;&#xC18C;</li>
 <li><code>[##_article_rep_category_##]</code>: &#xCE74;&#xD14C;&#xACE0;&#xB9AC; &#xC774;&#xB984;</li>
-<li><code>[##_article_rep_date_##]</code>: &#xAE00;&#xC4F4; &#xB0A0;&#xC9DC;</li>
+<li><code>[##_article_rep_date_##]</code>: &#xAE00;&#xC4F4; &#xB0A0;&#xC9DC;/&#xC2DC;&#xAC04; (yyyy.mm.dd HH:MM)</li>
+<li><code>[##_article_rep_simple_date_##]</code>: &#xAE00;&#xC4F4; &#xB0A0;&#xC9DC; (yyyy.mm.dd)</li>
 <li><code>[##_article_rep_author_##]</code>: &#xC791;&#xC131;&#xC790; &#xC774;&#xB984;</li>
-<li><code>[##_article_rep_summary_##]</code>: &#xAE00; &#xB0B4;&#xC6A9; &#xC77C;&#xBD80;</li>
-<li><code>&lt;s_article_rep_thumbnail&gt;</code>: &#xB300;&#xD45C; &#xC774;&#xBBF8;&#xC9C0; &#xC378;&#xB124;&#xC77C;&#xC774; &#xD45C;&#xC2DC;&#xB418;&#xB294; &#xC601;&#xC5ED;&#xC785;&#xB2C8;&#xB2E4; (&#xB300;&#xD45C; &#xC774;&#xBBF8;&#xC9C0;&#xAC00; &#xC5C6;&#xB294; &#xACBD;&#xC6B0; &#xD45C;&#xC2DC;&#xB418;&#xC9C0; &#xC54A;&#xC74C;)<ul>
+<li><code>[##_article_rep_summary_##]</code>: &#xAE00; &#xB0B4;&#xC6A9; &#xC694;&#xC57D;</li>
+<li><code>&lt;s_article_rep_thumbnail&gt;</code>: &#xB300;&#xD45C; &#xC774;&#xBBF8;&#xC9C0; &#xC378;&#xB124;&#xC77C;&#xC774; &#xD45C;&#xC2DC;&#xB418;&#xB294; &#xC601;&#xC5ED; (&#xB300;&#xD45C; &#xC774;&#xBBF8;&#xC9C0;&#xAC00; &#xC5C6;&#xB294; &#xACBD;&#xC6B0; &#xD45C;&#xC2DC;&#xB418;&#xC9C0; &#xC54A;&#xC74C;)<ul>
 <li><code>[##_article_rep_thumbnail_url_##]</code>: &#xB300;&#xD45C; &#xC774;&#xBBF8;&#xC9C0; &#xC378;&#xB124;&#xC77C; &#xC8FC;&#xC18C;</li>
 <li><code>[##_article_rep_thumbnail_raw_url_##]</code>: &#xB300;&#xD45C; &#xC774;&#xBBF8;&#xC9C0; &#xC6D0;&#xBCF8; &#xC8FC;&#xC18C;</li>
+</ul>
+</li>
+<li><code>&lt;s_rp_count&gt;</code>: &#xB313;&#xAE00;&#xC758; &#xAC2F;&#xC218;&#xB97C; &#xCD9C;&#xB825;&#xD558;&#xB294; &#xC601;&#xC5ED;<ul>
+<li><code>[##_article_rep_rp_cnt_##]</code>: &#xB2F5;&#xAE00; &#xC218; </li>
 </ul>
 </li>
 </ul>
@@ -732,7 +732,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"글","level":"3.3","depth":1,"next":{"title":"댓글","level":"3.3.1","depth":2,"path":"contents/comment.md","ref":"contents/comment.md","articles":[]},"previous":{"title":"방명록","level":"3.2","depth":1,"path":"contents/guestbook.md","ref":"contents/guestbook.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-tistory"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-tistory":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"contents/post.md","mtime":"2019-02-11T05:46:42.325Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-11T06:14:27.429Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"글","level":"3.3","depth":1,"next":{"title":"댓글","level":"3.3.1","depth":2,"path":"contents/comment.md","ref":"contents/comment.md","articles":[]},"previous":{"title":"방명록","level":"3.2","depth":1,"path":"contents/guestbook.md","ref":"contents/guestbook.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-tistory"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-tistory":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"contents/post.md","mtime":"2019-02-26T09:49:38.931Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-26T10:01:35.366Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
