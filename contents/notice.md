@@ -6,6 +6,9 @@
   - `[##_notice_rep_date_##]` : 글쓴 날짜
   - `[##_notice_rep_desc_##]` : 본문 내용
   - `[##_notice_rep_author_##]` : 작성자 이름 (*팀블로그용 치환자)
+  - `<s_notice_rep_thumbnail>`: 대표 이미지 썸네일이 표시되는 영역 (대표 이미지가 없는 경우 표시되지 않음)
+    - `[##_notice_rep_thumbnail_url_##]`: 대표 이미지 썸네일 주소
+    - `[##_notice_rep_thumbnail_raw_url_##]`: 대표 이미지 원본 주소
 
 ```html
 <s_notice_rep>
@@ -38,7 +41,7 @@
   - `[##_notice_rep_desc_##]` : 본문 내용
   - `[##_notice_rep_author_##]` : 작성자 이름 (*팀블로그용 치환자)
   - `[##_notice_rep_summary_##]`: 글 내용 일부
-  - `<s_notice_rep_thumbnail>`: 대표 이미지 썸네일이 표시되는 영역입니다 (대표 이미지가 없는 경우 표시되지 않음)
+  - `<s_notice_rep_thumbnail>`: 대표 이미지 썸네일이 표시되는 영역 (대표 이미지가 없는 경우 표시되지 않음)
     - `[##_notice_rep_thumbnail_url_##]`: 대표 이미지 썸네일 주소
     - `[##_notice_rep_thumbnail_raw_url_##]`: 대표 이미지 원본 주소
 
