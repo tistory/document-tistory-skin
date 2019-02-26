@@ -6,12 +6,17 @@
   - `[##_article_rep_title_##]`: 블로그 글의 제목
   - `[##_article_rep_category_link_##]`: 카테고리 링크
   - `[##_article_rep_category_##]`: 카테고리 명
-  - `[##_article_rep_date_##]`: 글쓴 날짜
+  - `[##_article_rep_date_##]`: 글쓴 날짜/시간 (yyyy.mm.dd HH:MM)
+  - `[##_article_rep_simple_date_##]`: 글쓴 날짜 (yyyy.mm.dd)
   - `[##_article_rep_author_##]`: 작성자 이름 (*팀블로그용 치환자)
   - `[##_article_rep_desc_##]`: 블로그 본문 내용
   - `<s_article_rep_thumbnail>`: 대표 이미지 썸네일이 표시되는 영역 (대표 이미지가 없는 경우 표시되지 않음)
     - `[##_article_rep_thumbnail_url_##]`: 대표 이미지 썸네일 주소
     - `[##_article_rep_thumbnail_raw_url_##]`: 대표 이미지 원본 주소
+  - `[##_article_rep_rp_link_##]`: 댓글을 열고 닫는 온클릭 이벤트
+  - `<s_rp_count>`: 댓글의 갯수를 출력하는 영역
+    - `[##_article_rep_rp_cnt_##]`: 답글 수 
+
 
 ```html
 <s_article_rep>
@@ -64,22 +69,6 @@
   </s_tag_label>
 ```
 
-## 댓글 수
-
-- `<s_rp_count>`: 댓글의 갯수를 출력하는 영역
-  - `[##_article_rep_rp_link_##]`: 댓글을 열고 닫는 온클릭 이벤트
-  - `[##_article_rep_rp_cnt_##]`: 답글 수 
-
-```html
-<div class="actionTrail">
-  <a href="#rp" onclick="[##_article_rep_rp_link_##]">
-    <s_rp_count>
-      댓글 <span class="cnt">[##_article_rep_rp_cnt_##]</span>개가 달렸습니다.
-    </s_rp_count>
-  </a>
-</div>
-```
-
 ## 퍼머링크 / 인덱스
 
 퍼머링크 페이지에서와 인덱스 페이지에서 표시될 내용을 구분할 수 있습니다.\
@@ -95,12 +84,15 @@
   - `[##_article_rep_title_##]`: 블로그 글의 제목
   - `[##_article_rep_category_link_##]`: 카테고리 주소
   - `[##_article_rep_category_##]`: 카테고리 이름
-  - `[##_article_rep_date_##]`: 글쓴 날짜
+  - `[##_article_rep_date_##]`: 글쓴 날짜/시간 (yyyy.mm.dd HH:MM)
+  - `[##_article_rep_simple_date_##]`: 글쓴 날짜 (yyyy.mm.dd)
   - `[##_article_rep_author_##]`: 작성자 이름
   - `[##_article_rep_summary_##]`: 글 내용 일부
   - `<s_article_rep_thumbnail>`: 대표 이미지 썸네일이 표시되는 영역 (대표 이미지가 없는 경우 표시되지 않음)
     - `[##_article_rep_thumbnail_url_##]`: 대표 이미지 썸네일 주소
     - `[##_article_rep_thumbnail_raw_url_##]`: 대표 이미지 원본 주소
+  - `<s_rp_count>`: 댓글의 갯수를 출력하는 영역
+    - `[##_article_rep_rp_cnt_##]`: 답글 수 
 
 ```html
 <s_index_article_rep>
