@@ -84,8 +84,8 @@
   - `[##_article_rep_title_##]`: 블로그 글의 제목
   - `[##_article_rep_category_link_##]`: 카테고리 주소
   - `[##_article_rep_category_##]`: 카테고리 이름
-  - `[##_article_rep_date_##]`: 글쓴 날짜/시간 (yyyy.mm.dd HH:MM)
-  - `[##_article_rep_simple_date_##]`: 글쓴 날짜 (yyyy.mm.dd)
+  - `[##_article_rep_date_##]`: 글 발행 날짜/시간 (yyyy.mm.dd HH:MM)
+  - `[##_article_rep_simple_date_##]`: 글 발행 날짜 (yyyy.mm.dd)
   - `[##_article_rep_author_##]`: 작성자 이름
   - `[##_article_rep_summary_##]`: 글 내용 요약
   - `<s_article_rep_thumbnail>`: 대표 이미지 썸네일이 표시되는 영역 (대표 이미지가 없는 경우 표시되지 않음)
@@ -126,7 +126,7 @@
   - `[##_article_related_rep_type_##]`: 글의 type (대표이미지 없음: text_type, 대표이미지 있음: thumb_type)
   - `[##_article_related_rep_link_##]`: 글 주소
   - `[##_article_related_rep_title_##]`: 글 제목
-  - `[##_article_related_rep_date_##]`: 글 작성시간
+  - `[##_article_related_rep_date_##]`: 글 발행시간
   - `<s_article_related_rep_thumbnail>`: 대표 이미지 썸네일이 표시되는 그룹치환자 (대표 이미지가 있는 경우 표시)
     - `[##_article_related_rep_thumbnail_link_##]`: 대표 이미지 썸네일 주소
 

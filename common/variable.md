@@ -11,7 +11,7 @@
   }
 </style>
 
-<s_var_if_scroll-load>
+<s_if_var_scroll-load>
 	<style>
 		.article_skin .area_paging .inner_paging.scroll_spinner {
 			width:48px; height:48px;
@@ -25,7 +25,7 @@
 		}
 	</style>
 	<script src="./images/scroll-load.js"></script>
-</s_var_if_scroll-load>
+</s_if_var_scroll-load>
 ```
 
 ## 옵션 정의 (index.xml)

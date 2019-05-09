@@ -22,8 +22,8 @@
             - `[##_cover_item_thumbnail_##]`: 컨텐츠 이미지
           - `[##_cover_item_category_##]`: 카테고리 명
           - `[##_cover_item_category_url_##]`: 카테고리 url
-          - `[##_cover_item_date_##]`: 발행날짜/시간 (yyyy.mm.dd HH:MM)
-          - `[##_cover_item_simple_date_##]`: 발행날짜 (yyyy.mm.dd)
+          - `[##_cover_item_date_##]`: 글 발행 날짜/시간 (yyyy.mm.dd HH:MM)
+          - `[##_cover_item_simple_date_##]`: 글 발행 날짜 (yyyy.mm.dd)
           - `[##_cover_item_comment_count_##]`: 댓글 수
 
 ### 치환자 사용 예

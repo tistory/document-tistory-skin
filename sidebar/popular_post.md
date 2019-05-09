@@ -5,7 +5,8 @@
   - `[##_rctps_rep_title_##]`: 글 제목
   - `[##_rctps_rep_rp_cnt_##]`: 글 댓글 갯수
   - `[##_rctps_rep_author_##]`: 작성자 이름 (*팀블로그용 치환자)
-  - `[##_rctps_rep_date_##]`: 글 발행시간
+  - `[##_rctps_rep_date_##]`: 글 발행 날짜/시간 (yyyy.mm.dd HH:MM)
+  - `[##_rctps_rep_simple_date_##]`: 글 발행 날짜 (yyyy.mm.dd)
   - `<s_rctps_rep_thumbnail>`: 대표 이미지가 있는 경우 치환
     - `[##_rctps_rep_thumbnail_##]`: 대표 이미지
   - `[##_rctps_rep_category_##]`: 카테고리 이름

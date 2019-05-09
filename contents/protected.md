@@ -5,8 +5,8 @@
   - `[##_article_rep_title_##]`: 보호글의 제목
   - `[##_article_rep_category_link_##]`: 카테고리 링크
   - `[##_article_rep_category_##]`: 카테고리 명
-  - `[##_article_rep_date_##]`: 글쓴 날짜/시간 (yyyy.mm.dd HH:MM)
-  - `[##_article_rep_simple_date_##]`: 글쓴 날짜 (yyyy.mm.dd)
+  - `[##_article_rep_date_##]`: 글 발행 날짜/시간 (yyyy.mm.dd HH:MM)
+  - `[##_article_rep_simple_date_##]`: 글 발행 날짜 (yyyy.mm.dd)
   - `[##_article_password_##]`: 보호글의 비밀번호 텍스트 박스의 Id값(label 사용 용도)
   - `[##_article_dissolve_##]`: 보호글의 비밀번호를 입력하고 엔터키나 확인버튼을 눌렀을 때 실행될 자바스크립트 코드가 들어갑니다.
   - `[##_article_rep_author_##]`: 작성자 이름 (*팀블로그용 치환자)

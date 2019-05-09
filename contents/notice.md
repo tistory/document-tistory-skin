@@ -3,8 +3,8 @@
 - `<s_notice_rep>`: 공지사항 그룹 치환자
   - `[##_notice_rep_link_##]` : '공지사항'에 등록된 글의 고유 주소
   - `[##_notice_rep_title_##]` : 글 제목
-  - `[##_notice_rep_date_##]`: 글쓴 날짜/시간 (yyyy.mm.dd HH:MM)
-  - `[##_notice_rep_simple_date_##]`: 글쓴 날짜 (yyyy.mm.dd)
+  - `[##_notice_rep_date_##]`: 글 발행 날짜/시간 (yyyy.mm.dd HH:MM)
+  - `[##_notice_rep_simple_date_##]`: 글 발행 날짜 (yyyy.mm.dd)
   - `[##_notice_rep_desc_##]` : 본문 내용
   - `[##_notice_rep_author_##]` : 작성자 이름 (*팀블로그용 치환자)
   - `<s_notice_rep_thumbnail>`: 대표 이미지 썸네일이 표시되는 영역 (대표 이미지가 없는 경우 표시되지 않음)
@@ -38,8 +38,8 @@
 - `<s_index_article_rep>`: 인덱스 페이지일 때만 표시되는 영역입니다
   - `[##_notice_rep_link_##]` : '공지사항'에 등록된 글의 고유 주소
   - `[##_notice_rep_title_##]` : 글 제목
-  - `[##_notice_rep_date_##]`: 글쓴 날짜/시간 (yyyy.mm.dd HH:MM)
-  - `[##_notice_rep_simple_date_##]`: 글쓴 날짜 (yyyy.mm.dd)
+  - `[##_notice_rep_date_##]`: 글 발행 날짜/시간 (yyyy.mm.dd HH:MM)
+  - `[##_notice_rep_simple_date_##]`: 글 발행 날짜 (yyyy.mm.dd)
   - `[##_notice_rep_desc_##]` : 본문 내용
   - `[##_notice_rep_author_##]` : 작성자 이름 (*팀블로그용 치환자)
   - `[##_notice_rep_summary_##]`: 글 내용 일부
