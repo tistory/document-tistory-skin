@@ -93,14 +93,9 @@
 - lengthOfRecentComment: 최근 댓글에 표현될 글자수
 - lengthOfRecentTrackback: 최근 트랙백에 표현될 글자수
 - lengthOfLink: 링크에 표현될 글자수
-- showListOnCategory: 카테고리 클릭시 리스트 표현(0:숨김, 1:보임)
-- showListOnArchive: 글보관함 클릭시 리스트 표현(0:숨김, 1:보임)
-- commentMessage: 댓글 표현 방법
-  - none: 댓글이 하나도 없을때
-  - single: 댓글이 하나 있을때
-- trackbackMessage: 트랙백 표현 방법
-  - none: 트랙백이 하나도 없을때
-  - single: 댓글이 하나 있을때
+- entriesOnPage: 홈 화면 글 수
+- entriesOnList: 글 목록 글 수
+- showListOnCategory: 카테고리 클릭시 글 목록 표현(0:내용만, 1:목록만, 2: 내용+목록)
 - tree: 카테고리
   - color: 카테고리 글자색
   - bgColor: 카테고리 배경색
