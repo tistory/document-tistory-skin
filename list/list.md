@@ -6,9 +6,10 @@
 - `<s_list>`: 리스트 그룹 치환자
   - `[##_list_conform_##]`: 카테고리 이름, 검색어, 태그명
   - `[##_list_count_##]`: 글의 총 개수
-  - `[##_list_image_##]`: 리스트 대표 이미지 (카테고리인 경우 카테고리 대표이미지, 그외 블로그 대표이미지)
   - `[##_list_description_##]`: 리스트 설명 (카테고리인 경우 카테고리 설명, 그외 블로그 설명)
   - `[##_list_style_##]`: 리스트 스타일 값 (class attribute로 활용 가능)
+  - `<s_list_image>`: 리스트 대표 이미지가 있는 경우 동작
+    - `[##_list_image_##]`: 리스트 대표 이미지 (카테고리인 경우 카테고리 대표이미지, 그외 블로그 대표이미지)
 
 ## 아이템 반복 그룹
 - `<s_list_empty>`: 리스트에 글이 없는 경우 보이는 영역
@@ -41,7 +42,7 @@
 <!-- 스킨 예 -->
 <s_list>
   <div class="searchList [##_list_style_##]">
-    <div style="background-image:url('[##_list_image_##]')">
+    <div <s_list_image>style="background-image:url('[##_list_image_##]')"</s_list_image>>
       <h3>'[##_list_conform_##]'에 해당되는 글 [##_list_count_##]건</h3>
       <p>[##_list_description_##]</p>
     </div>
