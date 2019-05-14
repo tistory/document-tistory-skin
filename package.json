@@ -9,6 +9,7 @@
   "scripts": {
     "start": "gitbook serve .",
     "build": "gitbook build . docs",
+    "clean": "rm -rf docs/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,8 +27,9 @@
     "url": "https://github.com/tistory/document-tistory-skin/issues"
   },
   "homepage": "https://github.com/tistory/document-tistory-skin#readme",
-  "dependencies": {
-    "gitbook": "^3.2.3",
+  "dependencies": {},
+  "devDependencies": {
+    "gitbook": "^2.6.9",
     "gitbook-cli": "^2.3.2"
   }
 }
