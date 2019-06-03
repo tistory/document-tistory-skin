@@ -6,7 +6,8 @@
   - `<s_cover_rep>`: 개별 커버 표시
     - `<s_cover>`: 개별 커버. name 애트리뷰트로 이름을 지정한다. 정의되지 않은 이름의 커버는 사용되지 않는다.
       - `[##_cover_title_##]`: 개별 커버 타이틀
-      - `[##_cover_url_##]`: 개별 커버 url
+      - `<s_cover_url>`: 커버 url이 있는 경우에만 치환
+        - `[##_cover_url_##]`: 개별 커버 url
       - `<s_cover_item>`: 개별 커버 컨텐츠
         - `<s_cover_item_not_article_info>`: 컨텐츠가 글이 아닌 경우에만 치환 (내부 치환자는 s_cover_item에 직접 사용 가능)
           - `[##_cover_item_title_##]`: 컨텐츠 타이틀
