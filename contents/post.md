@@ -8,6 +8,12 @@
   - `[##_article_rep_category_##]`: 카테고리 명
   - `[##_article_rep_date_##]`: 글쓴 날짜/시간 (yyyy.mm.dd HH:MM)
   - `[##_article_rep_simple_date_##]`: 글쓴 날짜 (yyyy.mm.dd)
+  - `[##_article_rep_date_year_##]`: 글쓴 세부시간 - 연도 (yyyy)
+  - `[##_article_rep_date_month_##]`: 글쓴 세부시간 - 월 (mm)
+  - `[##_article_rep_date_day_##]`: 글쓴 세부시간 - 일 (dd)
+  - `[##_article_rep_date_hour_##]`: 글쓴 세부시간 - 시 (HH)
+  - `[##_article_rep_date_minute_##]`: 글쓴 세부시간 - 분 (MM)
+  - `[##_article_rep_date_second_##]`: 글쓴 세부시간 - 초 (SS)
   - `[##_article_rep_author_##]`: 작성자 이름 (*팀블로그용 치환자)
   - `[##_article_rep_desc_##]`: 블로그 본문 내용
   - `<s_article_rep_thumbnail>`: 대표 이미지 썸네일이 표시되는 영역 (대표 이미지가 없는 경우 표시되지 않음)
@@ -86,6 +92,12 @@
   - `[##_article_rep_category_##]`: 카테고리 이름
   - `[##_article_rep_date_##]`: 글 발행 날짜/시간 (yyyy.mm.dd HH:MM)
   - `[##_article_rep_simple_date_##]`: 글 발행 날짜 (yyyy.mm.dd)
+  - `[##_article_rep_date_year_##]`: 글쓴 세부시간 - 연도 (yyyy)
+  - `[##_article_rep_date_month_##]`: 글쓴 세부시간 - 월 (mm)
+  - `[##_article_rep_date_day_##]`: 글쓴 세부시간 - 일 (dd)
+  - `[##_article_rep_date_hour_##]`: 글쓴 세부시간 - 시 (HH)
+  - `[##_article_rep_date_minute_##]`: 글쓴 세부시간 - 분 (MM)
+  - `[##_article_rep_date_second_##]`: 글쓴 세부시간 - 초 (SS)
   - `[##_article_rep_author_##]`: 작성자 이름
   - `[##_article_rep_summary_##]`: 글 내용 요약
   - `<s_article_rep_thumbnail>`: 대표 이미지 썸네일이 표시되는 영역 (대표 이미지가 없는 경우 표시되지 않음)
