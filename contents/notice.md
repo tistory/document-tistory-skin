@@ -5,6 +5,12 @@
   - `[##_notice_rep_title_##]` : 글 제목
   - `[##_notice_rep_date_##]`: 글 발행 날짜/시간 (yyyy.mm.dd HH:MM)
   - `[##_notice_rep_simple_date_##]`: 글 발행 날짜 (yyyy.mm.dd)
+  - `[##_notice_rep_date_year_##]`: 글쓴 세부시간 - 연도 (yyyy)
+  - `[##_notice_rep_date_month_##]`: 글쓴 세부시간 - 월 (mm)
+  - `[##_notice_rep_date_day_##]`: 글쓴 세부시간 - 일 (dd)
+  - `[##_notice_rep_date_hour_##]`: 글쓴 세부시간 - 시 (HH)
+  - `[##_notice_rep_date_minute_##]`: 글쓴 세부시간 - 분 (MM)
+  - `[##_notice_rep_date_second_##]`: 글쓴 세부시간 - 초 (SS)
   - `[##_notice_rep_desc_##]` : 본문 내용
   - `[##_notice_rep_author_##]` : 작성자 이름 (*팀블로그용 치환자)
   - `<s_notice_rep_thumbnail>`: 대표 이미지 썸네일이 표시되는 영역 (대표 이미지가 없는 경우 표시되지 않음)
@@ -40,6 +46,12 @@
   - `[##_notice_rep_title_##]` : 글 제목
   - `[##_notice_rep_date_##]`: 글 발행 날짜/시간 (yyyy.mm.dd HH:MM)
   - `[##_notice_rep_simple_date_##]`: 글 발행 날짜 (yyyy.mm.dd)
+  - `[##_notice_rep_date_year_##]`: 글쓴 세부시간 - 연도 (yyyy)
+  - `[##_notice_rep_date_month_##]`: 글쓴 세부시간 - 월 (mm)
+  - `[##_notice_rep_date_day_##]`: 글쓴 세부시간 - 일 (dd)
+  - `[##_notice_rep_date_hour_##]`: 글쓴 세부시간 - 시 (HH)
+  - `[##_notice_rep_date_minute_##]`: 글쓴 세부시간 - 분 (MM)
+  - `[##_notice_rep_date_second_##]`: 글쓴 세부시간 - 초 (SS)
   - `[##_notice_rep_desc_##]` : 본문 내용
   - `[##_notice_rep_author_##]` : 작성자 이름 (*팀블로그용 치환자)
   - `[##_notice_rep_summary_##]`: 글 내용 일부

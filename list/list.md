@@ -15,7 +15,13 @@
 - `<s_list_empty>`: 리스트에 글이 없는 경우 보이는 영역
 - `<s_list_rep>`: 리스트 아이템이 반복되는 영역
   - `[##_list_rep_link_##]`: 글의 고유 주소
-  - `[##_list_rep_regdate_##]`: 글이 작성된 날짜
+  - `[##_list_rep_regdate_##]`: 글 작성 날짜 (yyyy.mm.dd)
+  - `[##_list_rep_date_year_##]`: 글 작성 세부시간 - 연도 (yyyy)
+  - `[##_list_rep_date_month_##]`: 글 작성 세부시간 - 월 (mm)
+  - `[##_list_rep_date_day_##]`: 글 작성 세부시간 - 일 (dd)
+  - `[##_list_rep_date_hour_##]`: 글 작성 세부시간 - 시 (HH)
+  - `[##_list_rep_date_minute_##]`: 글 작성 세부시간 - 분 (MM)
+  - `[##_list_rep_date_second_##]`: 글 작성 세부시간 - 초 (SS)
   - `[##_list_rep_title_##]`: 글의 제목
   - `[##_list_rep_category_##]`: 글이 속한 카테고리 이름
   - `[##_list_rep_category_link_##]`: 글이 속한 카테고리 글 목록 url
