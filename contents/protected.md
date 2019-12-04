@@ -5,8 +5,8 @@
   - `[##_article_rep_title_##]`: 보호글의 제목
   - `[##_article_rep_category_link_##]`: 카테고리 링크
   - `[##_article_rep_category_##]`: 카테고리 명
-  - `[##_article_rep_date_##]`: 글 발행 날짜/시간 (yyyy.mm.dd HH:MM)
-  - `[##_article_rep_simple_date_##]`: 글 발행 날짜 (yyyy.mm.dd)
+  - `[##_article_rep_date_##]`: 글 발행 날짜/시간 (yyyy. m. d. HH:MM)
+  - `[##_article_rep_simple_date_##]`: 글 발행 날짜 (yyyy. m. d.)
   - `[##_article_rep_date_year_##]`: 글쓴 세부시간 - 연도 (yyyy)
   - `[##_article_rep_date_month_##]`: 글쓴 세부시간 - 월 (mm)
   - `[##_article_rep_date_day_##]`: 글쓴 세부시간 - 일 (dd)

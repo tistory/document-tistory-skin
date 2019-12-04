@@ -4,8 +4,8 @@
 (스킨에 페이지치환자가 존재하지 않는 경우 글 치환자에 페이지가 표시됩니다.)
   - `[##_article_rep_link_##]`: 고유 주소
   - `[##_article_rep_title_##]`: 제목
-  - `[##_article_rep_date_##]`: 글 발행 날짜/시간 (yyyy.mm.dd HH:MM)
-  - `[##_article_rep_simple_date_##]`: 글 발행 날짜 (yyyy.mm.dd)
+  - `[##_article_rep_date_##]`: 글 발행 날짜/시간 (yyyy. m. d. HH:MM)
+  - `[##_article_rep_simple_date_##]`: 글 발행 날짜 (yyyy. m. d.)
   - `[##_article_rep_date_year_##]`: 글쓴 세부시간 - 연도 (yyyy)
   - `[##_article_rep_date_month_##]`: 글쓴 세부시간 - 월 (mm)
   - `[##_article_rep_date_day_##]`: 글쓴 세부시간 - 일 (dd)
