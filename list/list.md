@@ -28,12 +28,19 @@
   - `[##_list_rep_rp_cnt_##]`: 댓글 수
   - `[##_list_rep_author_##]`: 작성자 이름
   - `[##_list_rep_summary_##]`: 글 내용 요약
+  - `[##_list_rep_thumbnail_url_##]`: 대표 이미지 원본 주소
   - `<s_list_rep_thumbnail>`: 대표 이미지가 있는 경우 치환
     - `[##_list_rep_thumbnail_##]`: 대표 이미지
 
 ## 리스트 스타일
 
 리스트 스타일을 사용하기 위해서는 [스킨 정보 파일](index.xml.md)에 리스트 스타일 아이템을 정의해야 합니다. 리스트 스타일을 정의하면 카테고리 관리화면에서 리스트 스타일이 표시되고 사용자가 선택할 수 있습니다. 이를 사용하여 카테고리별로 다른 스타일을 적용할 때 사용할 수 있습니다.
+
+```xml
+<default>
+    <liststyle>default liststyle 값</liststyle>
+</default>
+```
 
 ```xml
 <liststyle>
