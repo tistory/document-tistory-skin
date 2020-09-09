@@ -67,6 +67,7 @@
 - `[##_guest_rep_name_##]` : 글쓴사람 이름
 - `[##_guest_rep_date_##]` : 글쓴 날짜
 - `[##_guest_rep_desc_##]` : 글 내용
+- `[##_guest_rep_logo_##]` : 작성자 프로필
 - `[##_guest_rep_onclick_delete_##]` : 답글 삭제 온클릭 이벤트
 - `[##_guest_rep_onclick_reply_##]` : 답글 수정 온클릭 이벤트
 
