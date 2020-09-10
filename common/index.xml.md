@@ -95,7 +95,8 @@
 - lengthOfLink: 링크에 표현될 글자수
 - entriesOnPage: 홈 화면 글 수
 - entriesOnList: 글 목록 글 수
-- showListOnCategory: 카테고리 클릭시 글 목록 표현(0:내용만, 1:목록만, 2: 내용+목록)
+- showListOnCategory: 커버 미사용 홈에서 글 목록 표현(0:내용만, 1:목록만, 2: 내용+목록)
+- showListLock : 홈 설정과 기본 설정에서 '목록 구성 요소' 항목의 노출 여부 결정 (0: 노출, 1: 노출 안 함)
 - tree: 카테고리
   - color: 카테고리 글자색
   - bgColor: 카테고리 배경색
