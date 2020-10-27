@@ -52,6 +52,11 @@
 | 지역로그 | tt-body-location |
 
 
+## 광고 치환자
+- [##_revenue_list_upper_##] : 블로그 홈/목록 상단
+- [##_revenue_list_lower_##] : 블로그 홈/목록 하단
+
+
 ## 사용 예
 ```html
 <html>
@@ -62,6 +67,9 @@
 <s_t3>
   <header>
     <h1><a href="[##_blog_link_##]">[##_title_##]</a></h1>
+    <!-- 블로그 홈/목록 상단 치환자 -->
+    [##_revenue_list_upper_##]
+
 
     <!-- blog_menu사용 -->
     [##_blog_menu_##]
@@ -87,6 +95,9 @@
       <div class="blogDesc">[##_desc_##] <span class="userID">[##_blogger_##]</span></div>
     </div>
   </section>
+    
+    <!-- 블로그 홈/목록 하단 -->
+    [##_revenue_list_lower_##]
 </s_t3>
 </body>
 </html>
