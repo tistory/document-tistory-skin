@@ -130,3 +130,169 @@
   </s_rp_container>
 </div>
 ```
+
+## 기본 댓글 치환자
+- `[##_guestbook_group_##]` : 기본 댓글 치환자로, **댓글 개수**, **댓글 리스트**, **댓글 작성폼**을 출력합니다.
+- 기본 댓글 치환자는 서버에서 하나의 `div` 태그로 렌더링 된 후, 댓글 데이터를 받아 프론트에서 최종적으로 다음과 같이 렌더링 됩니다. (기능이 변경됨에 따라 html도 변경될 수 있습니다.)
+
+````html
+<!-- 서버에서 렌더링된 직후 -->
+
+<div data-tistory-react-app="Comment"></div>
+
+
+<!-- 전체 치환 구조 -->
+
+<div data-tistory-react-app="Comment">
+   <div class="tt-comment-cont">
+      [댓글 개수 영역]
+      [댓글 리스트 영역]
+      [댓글 작성폼 영역]
+   </div>
+</div>
+
+
+<!-- [댓글 개수 영역] -->
+
+<div class="tt-box-total">
+  <span class="tt_txt_g">댓글</span>
+  <span class="tt_num_g">{count}</span>
+</div>
+
+
+<!-- [댓글 리스트 영역] -->
+
+<div class="tt-area-reply">
+  <ul class="tt-list-reply">
+    <!-- 핀고정 댓글 영역 시작 -->
+    <li class="tt-item-reply">
+      <p class="tt_cmt_info">
+        <span class="tt_img_area_reply tt_ico_fixed"></span>
+        <span class="tt_txt_g">{name}님이 고정했습니다.</span>
+      </p>
+      <div class="tt-wrap-cmt">
+        <div class="tt-box-thumb">
+          <a href="{homepage}">
+            <span class="tt-thumbnail" style="background-image: url("{profileImageUrl}");"></span>
+          </a>
+        </div>
+        <div class="tt-box-content">
+          <div class="tt-box-meta">
+            <a href="{homepage}" class="tt-link-user">{name}</a>
+            <div class="tt_cmt_profile">
+              <button type="button" class="tt_btn_profile">
+                <span class="tt_img_area_reply tt_ico_profile">프로필열기</span>
+              </button>
+            </div>
+            <span class="tt_img_area_reply tt_ico_fixed" style="margin-left: 4px;"></span>
+          </div>
+          <div class="tt-wrap-desc">
+            <p class="tt_desc">{content}</p>
+          </div>
+          <div class="tt-wrap-info">
+            <span class="tt_date">{datetime}</span>
+            <span class="tt-wrap-link-comment">
+                     <a href="#" class="tt-link-comment">
+                        <span class="tt_txt_g">답글</span>
+                        <span class="tt_num_g">{count}</span>
+                     </a>
+                  </span>
+          </div>
+          <div class="tt-box-modify">
+            <button type="button" class="tt_img_area_reply tt-button-modify">더보기</button>
+            <ul class="tt-list-modify">
+              <li><a href="#">고정해제</a></li>
+              <li><a href="#">수정</a></li>
+              <li><a href="#">삭제</a></li>
+              <li><a href="#">링크복사</a></li>
+            </ul>
+          </div>
+          <div class="tt_box_pwd" style="display: none;">
+            <form class="tt_form_pwd">
+              <fieldset>
+                <legend class="screen_out">비밀번호 입력</legend>
+                <input class="tt_inp_g" type="password" title="비밀번호" placeholder="비밀번호를 입력하세요." maxlength="12" value="">
+                <button type="submit" class="tt_btn_submit" disabled="">
+                  <span class="tt_img_area_reply tt_ico_check">입력하기</span>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </li>
+    <!-- 핀고정 댓글 영역 끝 -->
+    <!-- 댓글이 20개보다 많을 때 이전 댓글 버튼 영역 시작 -->
+    <li>
+      <button type="button" class="tt_btn_prev_more">이전 댓글 더보기</button>
+    </li>
+    <!-- 댓글이 20개보다 많을 때 이전 댓글 버튼 영역 끝 -->
+    <!-- 일반 댓글 영역 시작 -->
+    <li class="tt-item-reply rp_general">
+      ...
+    </li>
+    <!-- 일반 댓글 영역 끝 -->
+  </ul>
+</div>
+
+
+<!-- [댓글 작성폼 영역] -->
+
+<!-- 로그인 시 -->
+<form style="margin: 0px;">
+  <div class="tt-area-write">
+    <div class="tt-box-thumb">
+      <span class="tt-thumbnail" style="background-image: url("{profileImageUrl}");"></span>
+    </div>
+    <div class="tt_wrap_write">
+      <div class="tt-box-textarea">
+        <div class="tt-inner-g">
+          <span class="tt_txt_user">{name}</span>
+          <label for="comment" class="screen_out">댓글</label>
+          <div contenteditable="true" placeholder="내용을 입력하세요." class="tt-cmt"></div>
+        </div>
+      </div>
+      <div class="tt-box-write">
+        <label class="tt-xe-label">
+          <input type="checkbox" name="secret" id="secret">
+          <span class="tt_img_area_reply tt-xe-input-helper"></span>
+          <span class="tt-xe-label-text">비밀글</span>
+        </label>
+        <button type="submit" class="tt-btn_register">등록</button>
+      </div>
+    </div>
+  </div>
+</form>
+<!-- 비로그인 시 -->
+<form style="margin: 0px;">
+  <div class="tt-area-write">
+    <div class="tt-box-thumb">
+      <span class="tt-thumbnail" style="background-image: url("{profileImageUrl}");"></span>
+    </div>
+    <div class="tt_wrap_write">
+      <div class="tt-box-account">
+        <input type="text" title="이름" placeholder="이름" maxlength="32" value="">
+        <input type="password" title="비밀번호" maxlength="12" placeholder="비밀번호" value="">
+      </div>
+      <div class="tt-box-textarea">
+        <div class="tt-inner-g">
+          <div contenteditable="true" placeholder="내용을 입력하세요." class="tt-cmt"></div>
+        </div>
+      </div>
+      <div class="tt-box-write">
+        <label class="tt-xe-label">
+          <input type="checkbox" id="secret">
+          <span class="tt_img_area_reply tt-xe-input-helper"></span>
+          <span class="tt-xe-label-text">비밀글</span>
+        </label>
+        <button type="submit" class="tt-btn_register" disabled="">등록</button>
+      </div>
+    </div>
+  </div>
+</form>
+````
+
+- 기본 댓글 치환자만 작성하는 것으로 댓글 화면을 구성할 수 있습니다.
+- 별도의 css를 작성하지 않아도 기본 스타일이 적용되며, css를 추가하여 원하는 디자인을 사용할 수도 있습니다.
+- 로그인 상태나 권한에 따라 렌더링 되는 내용이 달라집니다.
+- 기능이 추가됨에 따라 html을 수정하지 않아도 됩니다.
