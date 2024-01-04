@@ -73,6 +73,10 @@
         </a>
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -488,6 +492,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#xC2A4;&#xD0A8;-&#xC635;&#xC158;">&#xC2A4;&#xD0A8; &#xC635;&#xC158;</h1>
@@ -496,52 +503,52 @@
 <li><code>&lt;s_not_var_{VARIABLE_NAME}&gt;</code>: &#xC635;&#xC158;&#xC758; &#xAC12;&#xC774; &#xC5C6;&#xC73C;&#xBA74; (bool &#xD0C0;&#xC785;&#xC778; &#xACBD;&#xC6B0; false&#xC774;&#xBA74;) &#xCE58;&#xD658;</li>
 <li><code>[##_var_{VARIABLE_NAME}_##]</code>: &#xC635;&#xC158;&#xC758; &#xAC12;</li>
 </ul>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">style</span>&gt;</span><span class="css">
-  <span class="hljs-class">.wrap_sub</span> <span class="hljs-rules">{
-    <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">&apos;[##_var_cover-image_##]&apos;</span>)</span></span>;
-  }</span>
-</span><span class="hljs-tag">&lt;/<span class="hljs-title">style</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-class">.wrap_sub</span> {
+    <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&apos;[##_var_cover-image_##]&apos;</span>);
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-title">s_if_var_scroll-load</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">style</span>&gt;</span><span class="css">
-        <span class="hljs-class">.article_skin</span> <span class="hljs-class">.area_paging</span> <span class="hljs-class">.inner_paging</span><span class="hljs-class">.scroll_spinner</span> <span class="hljs-rules">{
-            <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"><span class="hljs-number">48px</span></span></span>; <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"><span class="hljs-number">48px</span></span></span>;
-            <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"><span class="hljs-function">url</span>(<span class="hljs-string">&apos;./images/spinner.gif&apos;</span>) no-repeat</span></span>;
-            <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">48px</span></span></span>;
-            <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">48px</span></span></span>;
-            <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span> auto</span></span>;
-        }</span>
-        <span class="hljs-class">.article_skin</span> <span class="hljs-class">.area_paging</span> <span class="hljs-class">.inner_paging</span><span class="hljs-class">.scroll_spinner</span> * <span class="hljs-rules">{
-            <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value">none
+<span class="hljs-tag">&lt;<span class="hljs-name">s_if_var_scroll-load</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        <span class="hljs-selector-class">.article_skin</span> <span class="hljs-selector-class">.area_paging</span> <span class="hljs-selector-class">.inner_paging</span><span class="hljs-selector-class">.scroll_spinner</span> {
+            <span class="hljs-attribute">width</span>:<span class="hljs-number">48px</span>; <span class="hljs-attribute">height</span>:<span class="hljs-number">48px</span>;
+            <span class="hljs-attribute">background</span>:<span class="hljs-built_in">url</span>(<span class="hljs-string">&apos;./images/spinner.gif&apos;</span>) no-repeat;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">48px</span>;
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">48px</span>;
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
         }
-    </span></span></span></span><span class="hljs-tag">&lt;/<span class="hljs-title">style</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;./images/scroll-load.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">s_if_var_scroll-load</span>&gt;</span>
+        <span class="hljs-selector-class">.article_skin</span> <span class="hljs-selector-class">.area_paging</span> <span class="hljs-selector-class">.inner_paging</span><span class="hljs-selector-class">.scroll_spinner</span> * {
+            <span class="hljs-attribute">display</span>:none
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;./images/scroll-load.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">s_if_var_scroll-load</span>&gt;</span>
 </code></pre>
 <h2 id="&#xC635;&#xC158;-&#xC815;&#xC758;-indexxml">&#xC635;&#xC158; &#xC815;&#xC758; (index.xml)</h2>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">variables</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">variablegroup</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;&#xADF8;&#xB8F9;&#xC774;&#xB984;&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">variable</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">name</span>&gt;</span>&#xCE58;&#xD658;&#xC790;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD560; &#xC774;&#xB984;<span class="hljs-tag">&lt;/<span class="hljs-title">name</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>&#xC0AC;&#xC6A9;&#xC790;&#xC5D0;&#xAC8C; &#xD45C;&#xC2DC;&#xD560; &#xC774;&#xB984;<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">description</span>&gt;</span>&#xC124;&#xBA85; (optional)<span class="hljs-tag">&lt;/<span class="hljs-title">description</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">type</span>&gt;</span>&#xD0C0;&#xC785;<span class="hljs-tag">&lt;/<span class="hljs-title">type</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>max, min, select option&#xB4F1; &#xAC12;&#xC744; &#xC124;&#xC815;&#xD558;&#xB294;&#xB370; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xC815;&#xBCF4; (optional: SELECT&#xD0C0;&#xC785;&#xC758; &#xACBD;&#xC6B0; &#xD544;&#xC218;)<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">default</span>&gt;</span>&#xC124;&#xC815;&#xD558;&#xC9C0; &#xC54A;&#xC740; &#xACBD;&#xC6B0; &#xAE30;&#xBCF8; &#xAC12;<span class="hljs-tag">&lt;/<span class="hljs-title">default</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">variable</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">variablegroup</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">variables</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">variables</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">variablegroup</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;&#xADF8;&#xB8F9;&#xC774;&#xB984;&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">variable</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>&#xCE58;&#xD658;&#xC790;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD560; &#xC774;&#xB984;<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>&#xC0AC;&#xC6A9;&#xC790;&#xC5D0;&#xAC8C; &#xD45C;&#xC2DC;&#xD560; &#xC774;&#xB984;<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>&#xC124;&#xBA85; (optional)<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">type</span>&gt;</span>&#xD0C0;&#xC785;<span class="hljs-tag">&lt;/<span class="hljs-name">type</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>max, min, select option&#xB4F1; &#xAC12;&#xC744; &#xC124;&#xC815;&#xD558;&#xB294;&#xB370; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xC815;&#xBCF4; (optional: SELECT&#xD0C0;&#xC785;&#xC758; &#xACBD;&#xC6B0; &#xD544;&#xC218;)<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">default</span>&gt;</span>&#xC124;&#xC815;&#xD558;&#xC9C0; &#xC54A;&#xC740; &#xACBD;&#xC6B0; &#xAE30;&#xBCF8; &#xAC12;<span class="hljs-tag">&lt;/<span class="hljs-name">default</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">variable</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">variablegroup</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">variables</span>&gt;</span>
 </code></pre>
 <h3 id="type">type</h3>
 <ul>
 <li>STRING: &#xBB38;&#xC790; &#xC785;&#xB825;</li>
 <li>SELECT: &#xC635;&#xC158; &#xC120;&#xD0DD; (&#xC635;&#xC158;&#xC740; name, label, value &#xAC12;&#xC744; &#xAC00;&#xC9C4; json&#xAC1D;&#xCCB4;&#xB85C; &#xC815;&#xC758;)<ul>
-<li>option &#xC608;<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span><span class="hljs-cdata">&lt;![CDATA[
+<li>option &#xC608;<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>&lt;![CDATA[
   [
     {&quot;name&quot;:&quot;light&quot;, &quot;label&quot;:&quot;&#xBC1D;&#xC740;&#xC0C9;&quot;, &quot;value&quot;:&quot;light&quot;},
     {&quot;name&quot;:&quot;dark&quot;, &quot;label&quot;:&quot;&#xC5B4;&#xB450;&#xC6B4;&#xC0C9;&quot;, &quot;value&quot;:&quot;dark&quot;}
   ]
-]]&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+]]&gt;<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
 </code></pre>
 </li>
 </ul>
@@ -551,55 +558,71 @@
 <li>COLOR: &#xCEEC;&#xB7EC;&#xAC12; (#000000)</li>
 </ul>
 <h3 id="&#xC635;&#xC158;-&#xC815;&#xC758;-&#xC0AC;&#xC6A9;-&#xC608;">&#xC635;&#xC158; &#xC815;&#xC758; &#xC0AC;&#xC6A9; &#xC608;</h3>
-<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">variables</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">variablegroup</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">variable</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">name</span>&gt;</span>scroll-load<span class="hljs-tag">&lt;/<span class="hljs-title">name</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-cdata">&lt;![CDATA[ &#xBB34;&#xD55C;&#xC2A4;&#xD06C;&#xB864; ]]&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">type</span>&gt;</span>BOOL<span class="hljs-tag">&lt;/<span class="hljs-title">type</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">option</span> /&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">default</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-title">default</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">description</span>&gt;</span>
-        <span class="hljs-cdata">&lt;![CDATA[ &#xAE00; &#xB9AC;&#xC2A4;&#xD2B8; &#xB05D;&#xC5D0; &#xB2E4;&#xB2E4;&#xB974;&#xBA74; &#xB2E4;&#xC74C; &#xD398;&#xC774;&#xC9C0;&#xB97C; &#xBD88;&#xB7EC;&#xC635;&#xB2C8;&#xB2E4;. ]]&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">description</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">variable</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">variablegroup</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">variablegroup</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;&#xB514;&#xC790;&#xC778;&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">variable</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">name</span>&gt;</span>cover-image<span class="hljs-tag">&lt;/<span class="hljs-title">name</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-cdata">&lt;![CDATA[ &#xCEE4;&#xBC84;&#xC774;&#xBBF8;&#xC9C0; ]]&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">type</span>&gt;</span>IMAGE<span class="hljs-tag">&lt;/<span class="hljs-title">type</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">option</span> /&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">default</span>&gt;</span>
-        <span class="hljs-cdata">&lt;![CDATA[ https://t1.daumcdn.net/tistory/0/Ray2/images/header_default.jpg ]]&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">default</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">description</span>&gt;</span>
-        <span class="hljs-cdata">&lt;![CDATA[ &#xCEE4;&#xBC84; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xBCC0;&#xACBD;&#xD569;&#xB2C8;&#xB2E4;. ]]&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">description</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">variable</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">variable</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">name</span>&gt;</span>point-color<span class="hljs-tag">&lt;/<span class="hljs-title">name</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-cdata">&lt;![CDATA[ &#xB300;&#xD45C; &#xC0C9; ]]&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">type</span>&gt;</span>COLOR<span class="hljs-tag">&lt;/<span class="hljs-title">type</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">option</span> /&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">default</span>&gt;</span><span class="hljs-cdata">&lt;![CDATA[#6bacce]]&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">default</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">description</span>&gt;</span>
-        <span class="hljs-cdata">&lt;![CDATA[&#xB300;&#xD45C; &#xC0C9;&#xC744; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.]]&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">description</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">variable</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">variablegroup</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">variables</span>&gt;</span>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">variables</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">variablegroup</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">variable</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>scroll-load<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+        &lt;![CDATA[ &#xBB34;&#xD55C;&#xC2A4;&#xD06C;&#xB864; ]]&gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">type</span>&gt;</span>BOOL<span class="hljs-tag">&lt;/<span class="hljs-name">type</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">option</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">default</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">default</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>
+        &lt;![CDATA[ &#xAE00; &#xB9AC;&#xC2A4;&#xD2B8; &#xB05D;&#xC5D0; &#xB2E4;&#xB2E4;&#xB974;&#xBA74; &#xB2E4;&#xC74C; &#xD398;&#xC774;&#xC9C0;&#xB97C; &#xBD88;&#xB7EC;&#xC635;&#xB2C8;&#xB2E4;. ]]&gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">variable</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">variablegroup</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">variablegroup</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;&#xB514;&#xC790;&#xC778;&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">variable</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>cover-image<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+        &lt;![CDATA[ &#xCEE4;&#xBC84;&#xC774;&#xBBF8;&#xC9C0; ]]&gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">type</span>&gt;</span>IMAGE<span class="hljs-tag">&lt;/<span class="hljs-name">type</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">option</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">default</span>&gt;</span>
+        &lt;![CDATA[ https://t1.daumcdn.net/tistory/0/Ray2/images/header_default.jpg ]]&gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">default</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>
+        &lt;![CDATA[ &#xCEE4;&#xBC84; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xBCC0;&#xACBD;&#xD569;&#xB2C8;&#xB2E4;. ]]&gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">variable</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">variable</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>point-color<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+        &lt;![CDATA[ &#xB300;&#xD45C; &#xC0C9; ]]&gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">type</span>&gt;</span>COLOR<span class="hljs-tag">&lt;/<span class="hljs-name">type</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">option</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">default</span>&gt;</span>&lt;![CDATA[#6bacce]]&gt;<span class="hljs-tag">&lt;/<span class="hljs-name">default</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>
+        &lt;![CDATA[&#xB300;&#xD45C; &#xC0C9;&#xC744; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.]]&gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">variable</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">variablegroup</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">variables</span>&gt;</span>
 </code></pre>
 
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -623,7 +646,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"스킨 옵션","level":"2.3","depth":1,"next":{"title":"태그 클라우드","level":"3.1","depth":1,"path":"contents/tag.md","ref":"contents/tag.md","articles":[]},"previous":{"title":"홈 커버","level":"2.2","depth":1,"path":"common/cover.md","ref":"common/cover.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-tistory"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{"maxIndexSize":1000000},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-tistory":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"common/variable.md","mtime":"2020-09-10T00:14:58.789Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-27T01:32:12.252Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"스킨 옵션","level":"2.3","depth":1,"next":{"title":"태그 클라우드","level":"3.1","depth":1,"path":"contents/tag.md","ref":"contents/tag.md","articles":[]},"previous":{"title":"홈 커버","level":"2.2","depth":1,"path":"common/cover.md","ref":"common/cover.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-tistory"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-tistory":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"common/variable.md","mtime":"2024-01-04T07:13:06.231Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-01-04T07:14:20.155Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -633,7 +656,7 @@
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/gitbook-plugin-search/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
         
     
         
@@ -653,7 +676,7 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

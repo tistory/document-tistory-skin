@@ -73,6 +73,10 @@
         </a>
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -488,6 +492,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#xB9AC;&#xC2A4;&#xD2B8;-&#xCE58;&#xD658;&#xC790;">&#xB9AC;&#xC2A4;&#xD2B8; &#xCE58;&#xD658;&#xC790;</h1>
@@ -518,7 +525,8 @@
 <li><code>[##_list_rep_date_hour_##]</code>: &#xAE00; &#xC791;&#xC131; &#xC138;&#xBD80;&#xC2DC;&#xAC04; - &#xC2DC; (HH)</li>
 <li><code>[##_list_rep_date_minute_##]</code>: &#xAE00; &#xC791;&#xC131; &#xC138;&#xBD80;&#xC2DC;&#xAC04; - &#xBD84; (MM)</li>
 <li><code>[##_list_rep_date_second_##]</code>: &#xAE00; &#xC791;&#xC131; &#xC138;&#xBD80;&#xC2DC;&#xAC04; - &#xCD08; (SS)</li>
-<li><code>[##_list_rep_title_##]</code>: &#xAE00;&#xC758; &#xC81C;&#xBAA9;</li>
+<li><code>[##_list_rep_title_##]</code>: &#xAE00;&#xC758; &#xC81C;&#xBAA9; (New &#xC774;&#xBBF8;&#xC9C0; &#xD0DC;&#xADF8; &#xD3EC;&#xD568;)</li>
+<li><code>[##_list_rep_title_text_##]</code>: &#xAE00;&#xC758; &#xC81C;&#xBAA9;</li>
 <li><code>[##_list_rep_category_##]</code>: &#xAE00;&#xC774; &#xC18D;&#xD55C; &#xCE74;&#xD14C;&#xACE0;&#xB9AC; &#xC774;&#xB984;</li>
 <li><code>[##_list_rep_category_link_##]</code>: &#xAE00;&#xC774; &#xC18D;&#xD55C; &#xCE74;&#xD14C;&#xACE0;&#xB9AC; &#xAE00; &#xBAA9;&#xB85D; url</li>
 <li><code>[##_list_rep_rp_cnt_##]</code>: &#xB313;&#xAE00; &#xC218;</li>
@@ -534,16 +542,16 @@
 </ul>
 <h2 id="&#xB9AC;&#xC2A4;&#xD2B8;-&#xC2A4;&#xD0C0;&#xC77C;">&#xB9AC;&#xC2A4;&#xD2B8; &#xC2A4;&#xD0C0;&#xC77C;</h2>
 <p>&#xB9AC;&#xC2A4;&#xD2B8; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; <a href="common/index.xml.md">&#xC2A4;&#xD0A8; &#xC815;&#xBCF4; &#xD30C;&#xC77C;</a>&#xC5D0; &#xB9AC;&#xC2A4;&#xD2B8; &#xC2A4;&#xD0C0;&#xC77C; &#xC544;&#xC774;&#xD15C;&#xC744; &#xC815;&#xC758;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xB9AC;&#xC2A4;&#xD2B8; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xC815;&#xC758;&#xD558;&#xBA74; &#xCE74;&#xD14C;&#xACE0;&#xB9AC; &#xAD00;&#xB9AC;&#xD654;&#xBA74;&#xC5D0;&#xC11C; &#xB9AC;&#xC2A4;&#xD2B8; &#xC2A4;&#xD0C0;&#xC77C;&#xC774; &#xD45C;&#xC2DC;&#xB418;&#xACE0; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC120;&#xD0DD;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xCE74;&#xD14C;&#xACE0;&#xB9AC;&#xBCC4;&#xB85C; &#xB2E4;&#xB978; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xC801;&#xC6A9;&#xD560; &#xB54C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
-<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">default</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">liststyle</span>&gt;</span>default liststyle &#xAC12;<span class="hljs-tag">&lt;/<span class="hljs-title">liststyle</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">default</span>&gt;</span>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">default</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">liststyle</span>&gt;</span>default liststyle &#xAC12;<span class="hljs-tag">&lt;/<span class="hljs-name">liststyle</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">default</span>&gt;</span>
 </code></pre>
-<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">liststyle</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">item</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>&#xD45C;&#xC2DC;&#xD560; &#xC774;&#xB984;<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">value</span>&gt;</span>&#xC0AC;&#xC6A9;&#xB420; &#xAC12;<span class="hljs-tag">&lt;/<span class="hljs-title">value</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">item</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">liststyle</span>&gt;</span>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">liststyle</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>&#xD45C;&#xC2DC;&#xD560; &#xC774;&#xB984;<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>&#xC0AC;&#xC6A9;&#xB420; &#xAC12;<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">liststyle</span>&gt;</span>
 </code></pre>
 <h2 id="&#xC0AC;&#xC6A9;-&#xC608;">&#xC0AC;&#xC6A9; &#xC608;</h2>
 <pre><code class="lang-html">&lt;!-- &#xC2A4;&#xD0A8; &#xC608; --&gt;
@@ -569,31 +577,47 @@
 &lt;/s_list&gt;
 </code></pre>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#xBCC0;&#xD658; &#xC608; --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;searchList grid&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-image:url(&apos;https://sample.com/image.jpg&apos;)&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>&apos;&#xC5C5;&#xB370;&#xC774;&#xD2B8; &#xC18C;&#xC2DD;&apos;&#xC5D0; &#xD574;&#xB2F9;&#xB418;&#xB294; &#xAE00; 2&#xAC74;<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>&#xC0C8;&#xB86D;&#xAC8C; &#xC5C5;&#xB370;&#xC774;&#xD2B8;&#xB418;&#xB294; &#xB0B4;&#xC6A9;&#xC744; &#xC54C;&#xB824;&#xB4DC;&#xB9BD;&#xB2C8;&#xB2E4;.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">ol</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;date&quot;</span>&gt;</span>2016.01.25<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;/2289&quot;</span>&gt;</span>1&#xC6D4; &#xCD08;&#xB300;&#xC7A5;&#xC774; &#xBC30;&#xD3EC;&#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;cnt&quot;</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://s1.daumcdn.net/cfile/tistory/1234&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;date&quot;</span>&gt;</span>2015.12.22<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;/2283&quot;</span>&gt;</span>12&#xC6D4; &#xCD08;&#xB300;&#xC7A5;&#xC774; &#xBC30;&#xD3EC;&#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;cnt&quot;</span>&gt;</span>19<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://s1.daumcdn.net/cfile/tistory/5678&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;searchList grid&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image:url(&apos;https://sample.com/image.jpg&apos;)&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>&apos;&#xC5C5;&#xB370;&#xC774;&#xD2B8; &#xC18C;&#xC2DD;&apos;&#xC5D0; &#xD574;&#xB2F9;&#xB418;&#xB294; &#xAE00; 2&#xAC74;<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#xC0C8;&#xB86D;&#xAC8C; &#xC5C5;&#xB370;&#xC774;&#xD2B8;&#xB418;&#xB294; &#xB0B4;&#xC6A9;&#xC744; &#xC54C;&#xB824;&#xB4DC;&#xB9BD;&#xB2C8;&#xB2E4;.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;date&quot;</span>&gt;</span>2016.01.25<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/2289&quot;</span>&gt;</span>1&#xC6D4; &#xCD08;&#xB300;&#xC7A5;&#xC774; &#xBC30;&#xD3EC;&#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cnt&quot;</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://s1.daumcdn.net/cfile/tistory/1234&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;date&quot;</span>&gt;</span>2015.12.22<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/2283&quot;</span>&gt;</span>12&#xC6D4; &#xCD08;&#xB300;&#xC7A5;&#xC774; &#xBC30;&#xD3EC;&#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cnt&quot;</span>&gt;</span>19<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://s1.daumcdn.net/cfile/tistory/5678&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
@@ -617,7 +641,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"리스트","level":"3.4","depth":1,"next":{"title":"리스트 페이징","level":"3.4.1","depth":2,"path":"list/paging.md","ref":"list/paging.md","articles":[]},"previous":{"title":"페이지","level":"3.3.4","depth":2,"path":"contents/page.md","ref":"contents/page.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-tistory"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{"maxIndexSize":1000000},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-tistory":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"list/list.md","mtime":"2020-09-10T00:14:58.811Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-27T01:32:12.252Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"리스트","level":"3.4","depth":1,"next":{"title":"리스트 페이징","level":"3.4.1","depth":2,"path":"list/paging.md","ref":"list/paging.md","articles":[]},"previous":{"title":"페이지","level":"3.3.4","depth":2,"path":"contents/page.md","ref":"contents/page.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-tistory"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-tistory":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"list/list.md","mtime":"2024-01-04T07:13:06.244Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-01-04T07:14:20.155Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -627,7 +651,7 @@
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/gitbook-plugin-search/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
         
     
         
@@ -647,7 +671,7 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 
