@@ -22,7 +22,8 @@
   - `[##_list_rep_date_hour_##]`: 글 작성 세부시간 - 시 (HH)
   - `[##_list_rep_date_minute_##]`: 글 작성 세부시간 - 분 (MM)
   - `[##_list_rep_date_second_##]`: 글 작성 세부시간 - 초 (SS)
-  - `[##_list_rep_title_##]`: 글의 제목
+  - `[##_list_rep_title_##]`: 글의 제목 (New 이미지 태그 포함)
+  - `[##_list_rep_title_text_##]`: 글의 제목
   - `[##_list_rep_category_##]`: 글이 속한 카테고리 이름
   - `[##_list_rep_category_link_##]`: 글이 속한 카테고리 글 목록 url
   - `[##_list_rep_rp_cnt_##]`: 댓글 수
