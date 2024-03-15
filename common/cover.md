@@ -194,7 +194,7 @@
   {
     "name": "list",
     "title": "",
-    "dataType": "LIST",
+    "dataType": "RECENT",
     "data": {
       "category": "ALL",
       "size": 5
